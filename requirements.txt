@@ -12,3 +12,4 @@ streamlit
 transformers
 torch
 tabulate
+plotly

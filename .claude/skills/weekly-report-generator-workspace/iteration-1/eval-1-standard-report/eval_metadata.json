@@ -1,0 +1,17 @@
+{
+  "eval_id": 1,
+  "eval_name": "standard-report",
+  "prompt": "帮我生成一份本周的周报。仓库路径是 ~/.claude/skills/weekly-report-generator-workspace/test-repo",
+  "assertions": [
+    {"id": "report_exists", "description": "生成一个 .md 报告文件"},
+    {"id": "has_overview", "description": "包含概览章节，含提交总数和贡献者数"},
+    {"id": "correct_date_range", "description": "日期范围为 2026-06-29 ~ 2026-06-30"},
+    {"id": "commit_count_4", "description": "总提交数为 4（test-repo 有4个本周提交）"},
+    {"id": "author_count_2", "description": "贡献者数为 2（Test User 和 Dev Two）"},
+    {"id": "has_author_stats", "description": "包含按作者统计的提交数表格"},
+    {"id": "has_commit_details", "description": "包含按日期分组的提交详情"},
+    {"id": "has_todo_section", "description": "包含 TODO 变更章节"},
+    {"id": "has_file_changes", "description": "包含变更文件统计"},
+    {"id": "chinese_template", "description": "使用中文模板格式（# 周报）"}
+  ]
+}

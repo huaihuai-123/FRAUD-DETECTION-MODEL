@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "生成一个 .md 报告文件", "passed": true, "evidence": "report.md 已生成，45行"},
+    {"text": "正确处理空周：标注提交数为0且不崩溃", "passed": true, "evidence": "Git Commits 章节显示 No commits were made"},
+    {"text": "概览中明确显示本周无提交", "passed": true, "evidence": "明确说明 No commits were made in the repository this week"},
+    {"text": "日期范围为 2026-06-29 ~ 2026-06-30", "passed": true, "evidence": "标题显示 Monday 2026-06-29 ~ Tuesday 2026-06-30"},
+    {"text": "报告简洁但不缺少基本章节", "passed": false, "evidence": "包含不必要的 Working Tree Status 和 Files in Repository 章节，过于冗长，添加了与周报无关的内容"}
+  ]
+}

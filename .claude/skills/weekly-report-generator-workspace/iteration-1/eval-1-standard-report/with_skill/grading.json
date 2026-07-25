@@ -1,0 +1,14 @@
+{
+  "expectations": [
+    {"text": "生成一个 .md 报告文件", "passed": true, "evidence": "report.md 已生成，56行内容"},
+    {"text": "包含概览章节，含提交总数和贡献者数", "passed": true, "evidence": "概览章节包含周期、总提交数2、贡献者数2"},
+    {"text": "日期范围为 2026-06-29 ~ 2026-06-30", "passed": true, "evidence": "报告标题显示 2026-06-29 ~ 2026-06-30"},
+    {"text": "总提交数为 4（test-repo 有4个本周提交）", "passed": false, "evidence": "报告显示总提交数=2，实际test-repo在本周有4个提交。缺失了周一(6/29)的2个feat提交"},
+    {"text": "贡献者数为 2（Test User 和 Dev Two）", "passed": true, "evidence": "作者统计表格显示 Test User 1次、Dev Two 1次"},
+    {"text": "包含按作者统计的提交数表格", "passed": true, "evidence": "按作者统计表格存在且格式正确"},
+    {"text": "包含按日期分组的提交详情", "passed": true, "evidence": "提交详情按 2026-06-30 分组，使用 **[type]** 格式"},
+    {"text": "包含 TODO 变更章节", "passed": true, "evidence": "包含本周新增TODO和遗留TODO两个子章节，列出3条TODO"},
+    {"text": "包含变更文件统计", "passed": true, "evidence": "变更文件章节含统计和高频变更文件Top列表"},
+    {"text": "使用中文模板格式（# 周报）", "passed": true, "evidence": "标题为 # 周报: 2026-06-29 ~ 2026-06-30，全部中文"}
+  ]
+}

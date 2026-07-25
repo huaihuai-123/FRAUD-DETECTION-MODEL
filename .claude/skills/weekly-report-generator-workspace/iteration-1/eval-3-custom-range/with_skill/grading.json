@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "生成一个 .md 报告文件", "passed": true, "evidence": "report.md 已生成，56行"},
+    {"text": "包含概览章节", "passed": true, "evidence": "概览章节含周期、总提交数2、贡献者数2"},
+    {"text": "日期范围为 2026-06-29 ~ 2026-06-30", "passed": true, "evidence": "标题显示 2026-06-29 ~ 2026-06-30，符合用户指定范围"},
+    {"text": "总提交数为 4（test-repo 在范围内有4个提交）", "passed": false, "evidence": "报告仅显示2个提交，缺失了6月29日的2个提交。与eval-1同样的bug"},
+    {"text": "包含按作者统计", "passed": true, "evidence": "作者统计表格显示 Dev Two 和 Test User"},
+    {"text": "包含 TODO 变更章节", "passed": true, "evidence": "TODO变更章节列出3条遗留TODO"},
+    {"text": "包含变更文件统计", "passed": true, "evidence": "变更文件章节含统计和Top列表"}
+  ]
+}

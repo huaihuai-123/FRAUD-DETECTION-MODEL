@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "eval_name": "empty-week",
+  "prompt": "生成周报，扫描当前目录",
+  "assertions": [
+    {"id": "report_exists", "description": "生成一个 .md 报告文件"},
+    {"id": "handles_empty_week", "description": "正确处理空周：标注提交数为0且不崩溃"},
+    {"id": "clear_zero_status", "description": "概览中明确显示本周无提交"},
+    {"id": "correct_date_range", "description": "日期范围为 2026-06-29 ~ 2026-06-30"},
+    {"id": "minimal_but_complete", "description": "报告简洁但不缺少基本章节"}
+  ]
+}

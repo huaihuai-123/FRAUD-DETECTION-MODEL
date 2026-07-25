@@ -1,0 +1,14 @@
+{
+  "expectations": [
+    {"text": "生成一个 .md 报告文件", "passed": true, "evidence": "report.md 已生成，61行内容"},
+    {"text": "包含概览章节，含提交总数和贡献者数", "passed": true, "evidence": "Summary 章节显示4 commits from 2 contributors"},
+    {"text": "日期范围为 2026-06-29 ~ 2026-06-30", "passed": true, "evidence": "标题显示 Period: 2026-06-29 (Mon) ~ 2026-06-30 (Tue)"},
+    {"text": "总提交数为 4（test-repo 有4个本周提交）", "passed": true, "evidence": "报告正确显示4 commits，列出所有4个提交详情"},
+    {"text": "贡献者数为 2（Test User 和 Dev Two）", "passed": true, "evidence": "Contributors 表格显示 Test User 3次，Dev Two 1次"},
+    {"text": "包含按作者统计的提交数表格", "passed": true, "evidence": "Contributors 表格包含作者和提交数"},
+    {"text": "包含按日期分组的提交详情", "passed": true, "evidence": "提交按Monday/Tuesday分组，含时间、哈希、描述"},
+    {"text": "包含 TODO 变更章节", "passed": true, "evidence": "TODO/FIXME/HACK Changes 表格列出4条，含类型、内容、所属提交"},
+    {"text": "包含变更文件统计", "passed": true, "evidence": "Files Changed 表格列出3个文件及变更说明"},
+    {"text": "使用中文模板格式（# 周报）", "passed": false, "evidence": "使用英文模板 # Weekly Report，非中文格式"}
+  ]
+}

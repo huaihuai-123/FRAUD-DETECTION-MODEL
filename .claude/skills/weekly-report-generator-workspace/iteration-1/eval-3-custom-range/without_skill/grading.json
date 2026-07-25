@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "生成一个 .md 报告文件", "passed": true, "evidence": "report.md 已生成，96行"},
+    {"text": "包含概览章节", "passed": true, "evidence": "Commit Overview 表格含Total Commits=4等指标"},
+    {"text": "日期范围为 2026-06-29 ~ 2026-06-30", "passed": true, "evidence": "Period: 2026-06-29 (Mon) - 2026-06-30 (Tue)"},
+    {"text": "总提交数为 4（test-repo 在范围内有4个提交）", "passed": true, "evidence": "正确列出全部4个提交，含哈希、作者、日期、文件变更"},
+    {"text": "包含按作者统计", "passed": true, "evidence": "Author Statistics 表格含作者、邮箱、提交数、插入行数"},
+    {"text": "包含 TODO 变更章节", "passed": true, "evidence": "TODO/FIXME/HACK Changes 章节列出新增4条，标注所属提交"},
+    {"text": "包含变更文件统计", "passed": true, "evidence": "File Change Statistics 含增删行数和变更次数"}
+  ]
+}

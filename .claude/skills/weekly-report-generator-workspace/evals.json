@@ -1,0 +1,23 @@
+{
+  "skill_name": "weekly-report-generator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我生成一份本周的周报。仓库路径是 ~/.claude/skills/weekly-report-generator-workspace/test-repo",
+      "expected_output": "项目根目录生成 weekly-report-2026-06-30.md，包含4条提交、2位作者、按日期分组的提交详情、TODO变更列表",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "生成周报，扫描当前目录",
+      "expected_output": "在当前目录(c:/AICoding/claude_start)生成周报，正确处理本周无提交的情况",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "总结一下本周的工作，生成周报。仓库在 ~/.claude/skills/weekly-report-generator-workspace/test-repo，只统计 6月29日 到 6月30日 的",
+      "expected_output": "生成周报，覆盖指定日期范围，包含test-repo中2026-06-29到2026-06-30的提交",
+      "files": []
+    }
+  ]
+}
